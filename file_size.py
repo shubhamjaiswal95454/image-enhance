@@ -27,14 +27,14 @@ if uploaded_image is not None:
     # Display original image
     original_image = Image.open(uploaded_image)
     st.subheader("Original Image")
-    st.image(original_image, use_column_width=True)
+    st.image(original_image, use_container_width=True)
 
     # Enhance image
     enhanced_image = enhance_image(original_image)
 
     # Display enhanced image
     st.subheader("Enhanced Image")
-    st.image(enhanced_image, use_column_width=True)
+    st.image(enhanced_image, use_container_width=True)
 
     # Download enhanced image
     buf = io.BytesIO()
