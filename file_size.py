@@ -1,7 +1,7 @@
 import streamlit as st
-import cv2
 from PIL import Image
 import numpy as np
+import cv2
 import io
 
 # Function to enhance/upscale the image
